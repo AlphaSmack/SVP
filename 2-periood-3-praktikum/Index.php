@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Owner
- * Date: 15.10.14
- * Time: 9:00
- */ 
+<!DOCKTYPE HTML>
+
+<form action="form_processing.php" method="post">
+    Username: <input type="text" name="username"><br>
+    Password: <input type="password" name="password">
+    <input type="submit" value="Send" name="submit">
+</form>

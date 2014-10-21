@@ -1,8 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Owner
- * Date: 15.10.14
- * Time: 9:42
- */
+header("Location: components/new_page.php");
 
+require "components/site-functions.php";
+include "components/html-head.php";
+$nimi = "Risto";
+
+ echo hello($nimi);
+?>
