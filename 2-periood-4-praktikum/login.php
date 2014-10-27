@@ -2,16 +2,19 @@
 if(isset($_POST['submit'])){
     $username = ($_POST["username"]);
     $password = ($_POST["password"]);
-}elseif{
-    if (isset($_POST)["username"])
-        echo "Password incorrect";
-    }else{
-        echo "Wrong username";
-    }
+}else{
+    echo "Logi sisse!";
 }
 
+if ($_POST["username"] == NULL){
+    echo "Sisesta kasutaja";
+}
 
+if ($_POST["password"] == NULL){
+    echo "Sisesta parool";
+}
 
-?>
-<!---
-echo "Login sisse {$username} kontosse";
+if($_POST["username"]!=NULL and $_POST["password"]!=NULL){
+    echo "Oled sisse logitud {$username} kasutajaga";
+}
+;
